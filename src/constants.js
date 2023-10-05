@@ -17,7 +17,7 @@ const defaultForm = {
 };
 
 const hashtags = {
-  common: '#photography #explore #feed #instadaily $#picoftheday',
+  common: '#photography #explore #feed #instadaily #picoftheday',
   category: {
     Street: '#street #streetphotography #streetphotographer',
     Portrait: '#portrait #portraitphotography #portraitphotographer',
