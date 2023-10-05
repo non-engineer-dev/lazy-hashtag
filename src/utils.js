@@ -19,7 +19,7 @@ function copyToClipboard(text) {
 
 function generateHashtags(form) {
   const { title, year, device, category } = form;
-  let text = `${title} • ${year}\n\n${device}\n\n${hashtags.common}\n\n${hashtags.category[category]}\n\n${hashtags.device[device]}\n\n${hashtags.channels}`;
+  let text = `${title} • ${year}\n\n${device}\n\n${hashtags.common} ${hashtags.category[category]} ${hashtags.device[device]} ${hashtags.channels}`;
   return text;
 }
 
