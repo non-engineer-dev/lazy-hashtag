@@ -11,29 +11,41 @@ const categoryOptions = ['Street', 'Portrait', 'Bird', 'Landscape', 'Event'];
 const defaultForm = {
   title: '',
   year: '',
-  device: '',
-  category: '',
+  device: 'iPhone 13',
+  category: 'Street',
+  isLightroom: true,
   isMonochrome: false,
+  isMacro: false,
 };
 
 const hashtags = {
   common: '#photography #explore #feed #instadaily #picoftheday',
+  india:
+    '#MyPixelDiary @photographers.of.india #_Indiasb @indiashutterbugs #bizarreindia @bizarre.india #desi_diaries @desi_diaries #asia_photo_magazine @asia_photo_magazine #indiapictures #budpoi #instacanvassy #reflectionofindia #indiaphotographyhub',
+  world: '@artofvisuals #500px @500px #1x @1x #world_photography_page',
+  travel: '#stayandwander @stayandwander',
+  streetDelhi: '#streetphotographydelhi',
   category: {
-    Street: '#street #streetphotography #streetphotographer',
-    Portrait: '#portrait #portraitphotography #portraitphotographer',
-    Bird: '#bird #birdphotography #birdphotographer',
-    Landscape: '#landscape #landscapephotography #landscapephotographer',
-    Event: '#event #eventphotography #eventphotographer',
+    Street:
+      '#street #streetphotography #bcncollective #streetphotographyindia #_soi',
+    Portrait: '#portrait #portraitphotography',
+    Bird: '#bird #birdphotography',
+    Landscape: '#landscape #landscapephotography',
+    Event: '#event #eventphotography',
   },
   device: {
-    'OnePlus 3T': '#oneplus #oneplusphotography',
-    'Samsung S10': '#samsung #samsungphotography',
-    'Canon 550D': '#canon #canonphotography',
-    'Nikon D7000': '#nikon #nikonphotography',
-    'iPhone 13': '#apple #shotoniphone',
+    'OnePlus 3T': '#ShotOnOnePlus @oneplus',
+    'Samsung S10': '#samsungphotography @samsung @samsungmobile',
+    'Canon 550D':
+      '#canonphotography #CANwithCanon #CapturedOnCanon @canonindia_official',
+    'Nikon D7000': '#nikon #nikonphotography @nikonindiaofficial',
+    'iPhone 13': '#ShotoniPhone @apple',
   },
-  channels:
-    '#indiapictures #desi_diaries #_indiasb #_soi #mypixeldiary #1x #500px #budpoi #instacanvassy #_coi #world_photography_page #reflectionofindia #indiaphotographyhub #bcncollective',
+  lightroom: '#MadeWithLightroom',
+  monochrome: '#Bnw_India @bnw_india',
+  colored: '#_coi @colours.of.india',
+  macro:
+    '#macro #macrophotography #indianmacro @indianmacro #unseenmacro @unseenmacro #macrophotographylove @macrophotographylove #macroandflora @macroandflora',
 };
 
 export { deviceOptions, categoryOptions, defaultForm, hashtags };

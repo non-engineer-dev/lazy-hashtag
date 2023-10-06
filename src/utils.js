@@ -18,8 +18,20 @@ function copyToClipboard(text) {
 }
 
 function generateHashtags(form) {
-  const { title, year, device, category } = form;
-  let text = `${title} • ${year}\n\n${device}\n\n${hashtags.common} ${hashtags.category[category]} ${hashtags.device[device]} ${hashtags.channels}`;
+  const { title, year, device, category, isLightroom, isMonochrome, isMacro } =
+    form;
+  let text = `${title} • ${year}\n\n${device}\n\n${hashtags.common} ${hashtags.category[category]} ${hashtags.device[device]} ${hashtags.india} ${hashtags.world}`;
+  if (isMonochrome) {
+    text += ` ${hashtags.monochrome}`;
+  } else {
+    text += ` ${hashtags.colored}`;
+  }
+  if (isLightroom) {
+    text += ` ${hashtags.lightroom}`;
+  }
+  if (isMacro) {
+    text += ` ${hashtags.macro}`;
+  }
   return text;
 }
 

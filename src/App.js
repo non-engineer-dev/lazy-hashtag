@@ -14,7 +14,21 @@ function App() {
 
   // Handlers
   const handleFormChange = (e) => {
-    setForm((prevState) => ({ ...prevState, [e.target.id]: e.target.value }));
+    switch (e.target.id) {
+      case 'isMonochrome':
+      case 'isLightroom':
+      case 'isMacro':
+        setForm((prevState) => ({
+          ...prevState,
+          [e.target.id]: !prevState[e.target.id],
+        }));
+        break;
+      default:
+        setForm((prevState) => ({
+          ...prevState,
+          [e.target.id]: e.target.value,
+        }));
+    }
   };
   const handleReset = () => setForm(defaultForm);
   const handleCopy = () => copyToClipboard(generateHashtags(form));
@@ -52,6 +66,36 @@ function App() {
             </option>
           ))}
         </select>
+        <br />
+        <br />
+
+        <input
+          type="checkbox"
+          id="isLightroom"
+          checked={form.isLightroom}
+          onChange={handleFormChange}
+        />
+        <label htmlFor="isLightroom">Lightroom</label>
+        <br />
+        <br />
+
+        <input
+          type="checkbox"
+          id="isMonochrome"
+          checked={form.isMonochrome}
+          onChange={handleFormChange}
+        />
+        <label htmlFor="isMonochrome">Monochrome</label>
+        <br />
+        <br />
+
+        <input
+          type="checkbox"
+          id="isMacro"
+          checked={form.isMacro}
+          onChange={handleFormChange}
+        />
+        <label htmlFor="isMacro">Macro Photography</label>
         <br />
         <br />
       </form>
