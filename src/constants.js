@@ -21,7 +21,7 @@ const defaultForm = {
 const hashtags = {
   common: '#photography #explore #feed #instadaily #picoftheday',
   india:
-    '#MyPixelDiary @photographers.of.india #_Indiasb @indiashutterbugs #bizarreindia @bizarre.india #desi_diaries @desi_diaries #asia_photo_magazine @asia_photo_magazine #indiapictures #budpoi #instacanvassy #reflectionofindia #indiaphotographyhub',
+    '#MyPixelDiary @photographers.of.india #_Indiasb @indiashutterbugs #bizarreindia @bizarre.india #desi_diaries @desi_diaries #asia_photo_magazine @asia_photo_magazine #indiapictures #budpoi #instacanvassy #reflectionofindia #indiaphotographyhub #was_in',
   world: '@artofvisuals #500px @500px #1x @1x #world_photography_page',
   travel: '#stayandwander @stayandwander',
   streetDelhi: '#streetphotographydelhi',
